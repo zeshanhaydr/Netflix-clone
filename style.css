@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;700&family=Poppins:wght@400;500;600;700;800&family=Rubik:wght@400;500;600;700&display=swap");
+/* General Styling */
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: Poppins;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+img,
+svg {
+  display: block;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 10px;
+}
+
+*,
+body {
+  text-decoration: none;
+  list-style: none;
+}
+
+/* Header */
+
+.header-section {
+  background-image: url(images/header-image.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 80vh;
+  border-bottom: solid 8px rgb(64, 64, 64);
+  position: relative;
+}
+
+/* Nav Part < Header */
+
+.logo-container {
+  width: 18rem;
+  width: 18rem;
+}
+.logo-pic {
+  width: 100%;
+}
+
+.nav-header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttons-header-container button {
+  border: none;
+  color: white;
+  border-radius: 0.6rem;
+  font-size: 1.8rem;
+  padding: 0.8rem 2rem;
+  background-color: rgb(229, 9, 20);
+}
+
+/* Header>Text-content */
+
+.header-content {
+  text-align: center;
+  margin-top: 19rem;
+  padding: 0 2rem;
+}
+
+.header-text {
+  text-align: center;
+}
+
+.header-input-container {
+  margin-top: 2rem;
+}
+
+.header-input-container input {
+  border: solid rgb(97, 97, 97) 2px;
+  background: rgba(11, 11, 11, 0.5);
+  padding: 1.8rem 25rem 1.8rem 1rem;
+  font-size: 1.5rem;
+  text-align: left;
+  border-radius: 0.4rem;
+}
+
+.header-input-container input::placeholder {
+  color: rgb(187, 187, 187);
+}
+
+.header-input-container button {
+  border: none;
+  font-size: 2.2rem;
+  padding: 1.6rem 1.8rem 1.6rem 1.8rem;
+  border-radius: 0.6rem;
+  margin-left: 0.8rem;
+  color: white;
+  background-color: rgb(229, 9, 20);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.icon-arrow {
+  width: 30px;
+}
+
+/* Feature */
+
+.img-container {
+  width: 85rem;
+}
+
+.image-feature {
+  width: 100%;
+}
+
+.section-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Footer */
+
+.nav-bars-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-footer {
+  padding: 0.8rem 5rem 0.8rem 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  position: relative;
+  border-radius: 0.4rem;
+  font-size: 1.4rem;
+  background-color: #1a1a1a;
+  color: white;
+  border: solid 1px rgb(174, 174, 174);
+}
+
+.arrow-png {
+  position: absolute;
+  right: 0.8rem;
+  width: 1.6rem;
+}
+
+/* Reuseable Classes */
+
+.part {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.container {
+  padding: 2rem 24rem;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+p {
+  font-size: 2rem;
+}
+
+.paragraph {
+  font-size: 2rem;
+  color: rgb(169, 169, 169);
+  text-decoration: underline;
+  font-size: 1.6rem;
+}
+
+.para-update {
+  text-decoration: none;
+  color: rgb(190, 190, 190);
+}
+.para-feature {
+  font-size: 2.2rem;
+}
+
+.top-margin {
+  margin-top: 2rem;
+}
+
+.top-margin-lg {
+  margin-top: 3rem;
+}
+
+.section {
+  border-bottom: solid 8px rgb(64, 64, 64);
+  margin-block: 5rem;
+}
+
+/* FAQ */
+
+.center-text-div {
+  text-align: center;
+}
+
+.accordion {
+  margin: 6rem auto;
+  width: 100%;
+  max-width: 75rem;
+}
+
+.accordion li {
+  list-style: none;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.accordion li label {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  background-color: #303030;
+  margin-bottom: 0.2rem;
+  cursor: pointer;
+  position: relative;
+}
+
+label::after {
+  content: "+";
+  font-size: 3.4rem;
+  position: absolute;
+  right: 2rem;
+
+  transition: transform 0.5s;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.accordion .content {
+  background-color: #303030;
+  text-align: left;
+  padding: 0 2rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked + label + .content {
+  max-height: 60rem;
+  padding: 3rem 2rem;
+}
+
+.accordion input[type="radio"]:checked + label::after {
+  transform: rotate(135deg);
+}
